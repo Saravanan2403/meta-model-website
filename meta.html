@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Meta</title>
+</head>
+<style>
+    #parent{
+        height: 10vh;
+        width: 100vw;
+        /* background-color: pink; */
+        display: flex;
+        /* background-image: url(love.webp); */
+        background-size: cover;
+        background-position: center;
+        color:black;
+        background-clip: text;
+        text-decoration: none;
+    }
+    #left{
+        width: 15vw;
+        height: 10vh;
+        align-items: center;
+        /* background-color: blue; */
+    }
+    img{
+        transform: translatex(20px);
+    }
+    #centre{
+        width: 50vw;
+        height: 10vh;
+        text-decoration: none;
+        justify-content: space-between;
+        font-size: bold;
+        display: flex;
+        align-items: center;
+        /* background-color: brown; */
+    }
+    #right{
+        width: 35vw;
+        height: 10vh;
+        /* background-color: burlywood; */
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    #b1{
+        background-color: blueviolet;
+    }
+    #parent2{
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        background-color:black;
+        color: white;
+    }
+    #left2{
+        height:70vh;
+        width: 50vw;
+        padding: 80px;
+    }
+    #img2{
+        /* transform: translatey(80px); */
+        border-radius: 20px;
+    }
+    #right2{
+        height: 70vh;
+        width: 50vw;
+        /* background-color: yellow; */
+        padding: 100px;
+        font-size: xx-large;
+    }
+    #right2 button{
+        font-size: larger;
+        border-radius: 15px;
+        transition: 0.5s all;
+        color: white;
+        background-color: rgb(23, 125, 241);
+    }
+    #right2 button:hover{
+        background-color: white;
+        color: black;
+        /* font-size: larger; */
+    }
+    #meta{
+        width: 100vw;
+        height: 20vh;
+        font-size: 60px;
+        text-align: center;
+        color: transparent;
+        background-color: black;
+        background-image: url(video1.mp4); 
+        background-position: center;
+        background-size: cover;
+         background-clip: text;
+    } 
+    #parent3{
+        height: 30vh;
+        width: 100vw;
+        background-color:black;
+        /* display:block; */
+        font-size:large ;
+        text-align: center;
+    }
+    #parent3 p{
+        font-size:x-large ;
+        color: white;
+    }
+    #parent4{
+        height:60vh;
+        width: 100vw;
+        background-color: black;
+        display: flex;
+        color: white;
+    }
+    #left4{
+        padding-top: 80px;
+        width: 20vw;
+        height: 80vh;
+        /* background-color: burlywood; */
+    }
+    #centre4{
+        /* display: flex; */
+        text-align: center;
+        padding: 100px;
+        height: 70vh;
+        width: 60vw;
+        /* background-color: yellow; */
+    }
+    #right4{
+    height: 80vh;
+    width: 30vw;
+    align-items: center;
+    padding-top: 55px;
+    /* background-color: darkseagreen; */
+    }
+    #right4 img{
+        border-radius: 30px;
+    }
+    #parent5{
+        height: 60vh;
+        width: 100vw;
+        background-color: black;
+        display: flex;
+        color: white;
+    }
+    #left5{
+        width: 60vw;
+        height:60vh;
+    }
+    #left5 img{
+        padding: 25px;
+        border-radius: 50px;
+    }
+    #right5{
+        width: 40vw;
+        height: 60vh;
+        text-align: center;
+        padding-top: 90px;
+        font-size: larger;
+        text-transform: capitalize;
+    }
+    #right5 button{
+        background-color: rgb(23, 125, 241);
+        color: white;
+        border-radius: 10px;
+    }
+    #parent6{
+        height: 65vh;
+        width: 100vw;
+        background-color: black;
+        display: flex;
+        color: white;
+    }
+    #left6{
+        height: 55vh;
+        width: 40vw;
+        text-transform: capitalize;
+        padding-left:10px;
+        font-size: larger;
+        /* font-style: italic; */
+        text-align: center;
+    }
+    #right6{
+        height: 55vh;
+        width: 60vw;
+    }
+    #right6 img{
+        margin: 50px;
+        border-radius: 20px;
+    }
+    #parent7{
+        height: 55vh;
+        width: 100vw;
+        display: flex;
+        background-color: black;
+        color: white;
+    }
+    #left7{
+        display: flex;
+        align-items: center;
+        font-size: large;
+    }
+    #left7 img{
+        margin: 10px;
+        border-radius: 20px;
+    }
+    #left7 img:hover{
+        transform: scale(120%);
+        transition: all 0.5s;
+        width: 350px;
+    }
+    #parent8{
+        height: 40vh;
+        width: 100vw;
+        background-color: black;
+        color: white;
+        display: flex;
+    }
+    #left8{
+        width: 60vw;
+        height: 40vh;
+        font-size: large;
+        text-indent: 20px;
+    }
+    #right8{
+        width: 50vw;
+        height:40vh ;
+        text-align: center;
+    }
+    #parent9{
+        /* background-image: url(meta12.jpg); */
+        background: linear-gradient(yellow red white);
+        background-size: contain;
+        display: flex;
+        width: 100vw;
+        height: 40vh;
+    }
+    #left9{
+        width: 30vw;
+        height: 35vh;
+        /* display: block; */
+    }
+    #centre9{
+        height: 40vh;
+        width: 30vw;
+        /* display: block; */
+    }
+    #right9{
+        height:40vh;
+        width: 30vw;
+        text-align: center;
+        /* display: flex; */
+    }
+</style>
+<body>
+    <div id="parent">
+        <div id="left">
+            <img src="meta logo.png" width="120px" height="60px"/>
+        </div>
+        <div id="centre">
+            <p><a style="text-decoration: none;" href="https://about.meta.com/">Who we are</a></p>
+            <p><a style="text-decoration: none;" href="https://about.meta.com/technologies/">Our technologies</a></p>
+            <p><a style="text-decoration: none;" href="Our technologies">The metaverse</a></p>
+            <p><a style="text-decoration: none;" href="https://about.meta.com/meta-and-you/its-your-world/">Meta and you</a></p>
+        </div>
+        <div id="right">
+            <p><a style="text-decoration: none;" href="https://www.meta.com/">Shop meta</a></p>
+            <p><a style="text-decoration: none;" href="https://about.fb.com/news/">News</a></p>
+            <div class="dropdown">
+                <button id="b1" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  More Info
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="https://www.meta.com/help/support/">Contact</a></li>
+                  <li><a class="dropdown-item" href="https://www.google.com/maps?sca_esv=33f171317715abb5&sca_upv=1&output=search&q=meta+address&source=lnms&fbs=AEQNm0BKxFXqFZETuC92mLOmXO9xJMdcEc6vsS8xotR_o6JIE2lxJVbfbQf0QBF0bvfl3GFNBPTQACMdFh6XPuV1Z0Eg9hjj1mCoiKv3FGCZSoL8LFWndMdM2XR4aGD0cSNlCtcWfG2Uxx1VHbESZZGtTLqJIpWorIEiBwoLHBotrxsca8c17DXljhODP05SZ-xKH05k1jwUlGV8PNmYih-FkegBBuFe9w&entry=mc&ved=1t:200715&ictx=111">Address</a></li>
+                  <li><a class="dropdown-item" href="https://www.meta.com/help/">Help</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+    <div id="parent2">
+        <div id="left2">
+            <img id="img2" src="meta5.jpg"width="450px" alt="Unavailable">
+        </div>
+        <div id="right2">
+            
+            <p>
+                Connection is evolving, and so are we
+                
+                Learn more
+                </p>
+                <button id="b">Learn more</button>
+        </div>
+    </div>
+    <!-- <div id=meta>
+        <h1>META</h1>
+    </div>  -->
+    <centre>
+    <div id="parent3">
+        <h1>Meta</h1><br>
+        <p>Meta builds technologies that help people connect, find communities and grow businesses.</p>
+    </div>
+    </centre>
+
+    <div id="parent4">
+        <div id="left4">
+            <img src="meta2.png" width="350px">
+        </div>
+        <div id="centre4">
+            <h1>Helping people do more together</h1>
+            <h2>$8 billion<h2>
+            <h2>raised by our community on Facebook and Instagram to support causes they care about</h2>
+        </div>
+        <div id="right4">
+            <img src="meta3.png">
+        </div>
+    </div>
+    
+    <div id="parent5">
+        <div id="left5">
+        <img height="300px" width="600px"  src="meta4.jpg">
+        </div>
+        <div id="right5">
+        <h2>See the unreal</h2>
+            <p>Meta pictures or meta tags are snippets of code that provide information about a web page's content. Meta pictures provide a way for search engines and social media platforms to extract relevant information about a web page's content</p>
+            <button>Downloads</button>
+        </div>
+    </div>
+
+    <div id="parent6">
+        <div id="left6">
+            <h2>About</h2>
+            <p>"Meta" had been registered as a trademark in the United States in 2018 (after an initial filing in 2015) for marketing, advertising, and computer services, by a Canadian company that provided big data analysis of scientific literature.This company was acquired in 2017 by the Chan Zuckerberg Initiative (CZI), a foundation established by Zuckerberg and his wife, Priscilla Chan, and became one of their projects.Following the rebranding announcement, CZI announced that it had already decided to deprioritize the earlier Meta project, thus it would be transferring its rights to the name to Meta Platforms, and the previous project would end in 2022.</p>
+        </div>
+        <div id="right6">
+            <img width="600px" height="300px" src="meta1.png">
+
+        </div>
+    </div>
+    <div id="parent7">
+        <div id="left7">
+            <img src="meta11.jpg" width="400">
+            <img src="meta7.jpg" width="400">
+            <img src="meta8.jpg" width="400">
+        </div>
+    </div>
+    <div id="parent8">
+        <div id="left8">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt commodi itaque voluptas distinctio, minima accusamus officiis voluptatum numquam minus neque tempora fuga, reprehenderit similique tenetur excepturi quidem? Ad dolorum amet, minus ipsum hic, accusantium nam, recusandae veniam voluptate odio inventore iste debitis! Error id quis maiores numquam quas! Natus beatae enim atque. Ipsam eaque debitis officiis facilis, minima animi sequi nostrum recusandae corrupti velit. Repellat rerum placeat ipsum. Cum sequi optio illum recusandae reprehenderit. Corrupti itaque nostrum harum aspernatur eius, incidunt fugit, ipsam dolores eveniet, qui cupiditate? Delectus repellat voluptates obcaecati similique! Incidunt saepe distinctio aperiam obcaecati numquam tempora doloremque?</p>
+        </div>
+        <div id="right8">
+            <h2>Feedback/suggession</h2>
+            <textarea width="500px">submit</textarea><br>
+            <button>Submit</button>
+        </div>
+    </div>
+    <div id="parent9">
+        <div id="left9">
+            <h2>Location</h2>
+            <ul>
+                <li>Chennai</li>
+                <li>Kanchipuram</li>
+                <li>Thiruvallue</li>
+                <li>Pondy</li>
+                <li>Madurai</li>
+                <li>Ooty</li>
+                <li>trichy</li>
+                <li>Thirunelveli</li>
+                <li>Kanyakumari</li>
+            </ul>
+        </div>
+        <div id="centre9">
+                <h2>Description</h2>
+                <p>nihil quasi maxime nemo doloribus nostrum saepe facilis explicabo eveniet libero! Alias commodi illum dolore quaerat? Illum tenetur repellendus pariatur nihil explicabo voluptatem ea fuga similique ab alias perferendis molestiae ad aut suscipit quaerat velit optio magni dolore, adipisci deleniti temporibus laudantium. Odit iure eaque minus voluptatibus praesentium vel impedit exercitationem dolorem quo laborum. Aspernatur pariatur porro alias voluptas assumenda, possimus illum amet molestiae? Hic exercitationem recusandae, cupiditate commodi porro obcaecati magni!</p>
+        </div>
+        <div id="right9">
+            <h2>For Contact</h2>
+            <address>St.Thommas Mount Chennai-600016</address>
+            <h4>Instagram - Meta</h4>
+            <h4>Whatsapp - 9090876756</h4>
+            <h4>Telegram - Meta Universe</h4>
+        </div>
+    </div>
+</body>
+</html>
